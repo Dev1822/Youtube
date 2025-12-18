@@ -25,10 +25,10 @@ function countDisplay(countstr) {
         countstr = `${parseInt(count / 1000)} k`
     }
     else if (1000000 <= count && count < 1000000000) {
-        countstr = `${parseInt(count / 1000)} m`
+        countstr = `${parseInt(count / 1000000)} m`
     }
     else if (1000000000 <= count && count < 1000000000000) {
-        countstr = `${parseInt(count / 1000)} b`
+        countstr = `${parseInt(count / 1000000000)} b`
     }
     return countstr;
 }
