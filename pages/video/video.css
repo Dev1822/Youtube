@@ -1,0 +1,451 @@
+body{
+    background-color: #121212;
+}
+header{
+    display: flex;
+}
+.logos {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 0 20px;
+}
+
+.logos img {
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex: 1;
+    justify-content: center;
+}
+
+.search-container input {
+    width: 500px;
+    max-width: 100%;
+    height: 40px;
+    padding: 0 16px;
+    border-radius: 20px;
+    border: 1px solid #303030;
+    background-color: #121212;
+    color: #fff;
+    outline: none;
+}
+
+.search-container input::placeholder {
+    color: #aaa;
+}
+
+.search-btn {
+    width: 52px;
+    height: 40px;
+    border-radius: 0 20px 20px 0;
+    border: 1px solid #303030;
+    background-color: #222;
+    cursor: pointer;
+    margin-left: -52px;
+}
+
+.mic-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #222;
+    cursor: pointer;
+}
+
+.right-icons {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.create-btn {
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: none;
+    background-color: #272727;
+    color: #fff;
+    cursor: pointer;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 0 50px;
+}
+
+.videocontent{
+    width: 70%;
+}
+
+.related{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.video{
+    border-radius: 20px;
+}
+
+.stats{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 20px;
+  border-radius: 12px;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.channel-name {
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+.video-title{
+    color: white;
+}
+
+.verified {
+  font-size: 12px;
+  color: #aaa;
+  margin-left: 4px;
+}
+
+.subs {
+  font-size: 13px;
+  color: #aaa;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.join {
+  background: transparent;
+  border: 1px solid #3ea6ff;
+  color: #3ea6ff;
+}
+
+.subscribe {
+  background-color: white;
+  color: black;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background-color: #272727;
+  padding: 6px 10px;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  color: white;
+}
+
+.icon:hover {
+  background-color: #3a3a3a;
+}
+
+.descriptiondiv{
+    background-color: #272727;
+    color: white;
+    border-radius: 20px;
+    padding: 13px;
+}
+
+.desfooter {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  border-radius: 12px;
+  max-width: 900px;
+}
+
+.channel-left {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.channel-avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+}
+
+.channel-info h3 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.channel-info p {
+  margin: 4px 0 0;
+  font-size: 13px;
+  color: #aaa;
+}
+
+.channel-links {
+  display: flex;
+  gap: 10px;
+}
+
+.link-btn {
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 18px;
+  font-size: 14px;
+  background-color: #303030;
+  color: #fff;
+}
+
+.link-btn:hover {
+  background-color: #3f3f3f;
+}
+
+.facebook {
+  color: #1877f2;
+}
+
+.instagram {
+  color: #e1306c;
+}
+
+.video-card {
+  display: flex;
+  gap: 12px;
+  max-width: 720px;
+  cursor: pointer;
+}
+
+.card-thumbnail {
+  position: relative;
+  top: 12px;
+  width: 50%;
+  height: 100px;
+  border-radius: 12px;
+  overflow: hidden;
+  background: #222;
+}
+
+.card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.duration {
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 3px 6px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.video-info {
+  width: 50%;
+  height: 100px;
+  line-height: 18px;
+}
+
+.title {
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.channel {
+  font-size: 14px;
+  color: #aaa;
+  line-height: 1px;
+}
+
+.meta {
+  font-size: 13px;
+  color: #888;
+}
+
+.like{
+  color: white;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+
+  .main {
+    flex-direction: column;
+    padding: 0 24px;
+    gap: 30px;
+  }
+
+  .videocontent,
+  .related {
+    width: 100%;
+  }
+
+  .search-container input {
+    width: 350px;
+  }
+
+  .right-icons{
+    display: none;
+  }
+
+  .video-card {
+    max-width: 100%;
+  }
+
+  .card-thumbnail,
+  .video-info {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+
+  header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .logos {
+    padding: 0 12px;
+  }
+
+  .search-container {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .search-container input {
+    width: 100%;
+  }
+
+  /* .mic-btn {
+    display: none;
+  } */
+
+  .right-icons {
+    gap: 12px;
+  }
+
+  .main {
+    padding: 0 16px;
+  }
+
+  .stats {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
+
+  .actions {
+    flex-wrap: wrap;
+  }
+
+  .icons {
+    flex-wrap: wrap;
+  }
+
+  .video-card {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-thumbnail,
+  .video-info {
+    width: 100%;
+    height: auto;
+  }
+
+  .card-thumbnail {
+    height: 180px;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .channel-name {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .video{
+    height: 250px;
+  }
+
+  .search-container{
+    display: none;
+  }
+
+  .btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .icon {
+    font-size: 12px;
+    padding: 6px 8px;
+  }
+
+  .descriptiondiv {
+    font-size: 14px;
+  }
+
+  .desfooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .channel-links {
+    flex-wrap: wrap;
+  }
+}
