@@ -6,6 +6,7 @@
 html,body{
     display: flex;
     background-color: #121212;
+    width: 98vw;
 }
 .nav{
     display: flex;
@@ -61,10 +62,10 @@ html,body{
     flex: 1;
     display: flex;
     flex-direction: column;
-    width: 85vw;
 }
 
 .topbar {
+    width: 100%;
     height: 56px;
     padding: 0 16px;
     background-color: #121212;
@@ -80,7 +81,7 @@ html,body{
     display: flex;
     align-items: center;
     gap: 10px;
-    flex: 1;
+    flex: 0.9;
     justify-content: center;
 }
 
@@ -146,7 +147,6 @@ html,body{
 
 .thumbnail {
     width: 100%;
-    aspect-ratio: 16 / 9;
     border-radius: 12px;
     overflow: hidden;
 }
@@ -218,6 +218,34 @@ a{
 .more{
     color: white;
 }
+
+.skeleton-container {
+    width: 85vw;
+    padding: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(245px, 1fr));
+    gap: 20px;
+}
+
+.skeleton-card {
+  height: 220px;
+  width: 350px;
+  border-radius: 12px;
+  background: linear-gradient(
+    90deg,
+    #2a2a2a 25%,
+    #3a3a3a 37%,
+    #2a2a2a 63%
+  );
+  background-size: 400% 100%;
+  animation: load 1.4s infinite;
+}
+
+@keyframes load {
+  0% { background-position: 100% 0; }
+  100% { background-position: -100% 0; }
+}
+
 
 @media (max-width: 1024px) {
 

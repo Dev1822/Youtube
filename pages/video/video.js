@@ -53,6 +53,7 @@ function showVideo(data) {
 }
 
 function relatedVids(datas) {
+    showLoading();
     let results = datas.data;
     related.innerHTML="";
     videoCards=[]
@@ -100,14 +101,21 @@ function relatedVids(datas) {
 }
 
 function relatedVidsLoad(){
+    showLoading();
     fetch(`https://yt-api.p.rapidapi.com/related?id=${videoId}&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb`)
     .then((response)=>response.json())
     .then((datas)=>relatedVids(datas))
 }
 
-// fetch(`https://yt-api.p.rapidapi.com/video/info?id=${videoId}&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb`)
-//     .then((response => response.json()))
-//     .then((data) => showVideo(data))
+fetch(`https://yt-api.p.rapidapi.com/video/info?id=${videoId}&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb`)
+    .then((response => response.json()))
+    .then((data) => showVideo(data))
+
+function showLoading() {
+    related.innerHTML = `
+        ${'<div class="skeleton-card"></div>'.repeat(3)}
+    `;
+}
 
 
 
