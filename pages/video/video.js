@@ -16,9 +16,6 @@ const related = document.querySelector(".related");
 
 var videoCards = []
 
-
-//left : profile pic, subs, verification tick
-
 function countDisplay(countstr) {
     let count = parseInt(countstr);
     if (1000 <= count && count < 1000000) {
