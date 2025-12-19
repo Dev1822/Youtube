@@ -150,8 +150,8 @@ searchbtn.addEventListener("click", () => {
 
 function showLoading() {
     homeVideos.innerHTML = `
-      <div class="skeleton-container">
+      
         ${'<div class="skeleton-card"></div>'.repeat(12)}
-      </div>
+      
     `;
 }
