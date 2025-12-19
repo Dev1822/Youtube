@@ -75,10 +75,10 @@ function loadVideos(datas) {
 
 function loadHome() {
     showLoading();
-    // fetch("https://yt-api.p.rapidapi.com/trending?geo=US&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb")
-    //     .then((response) => response.json())
-    //     .then((datas) => loadVideos(datas))
-    //     .catch((error) => console.log(error));
+    fetch("https://yt-api.p.rapidapi.com/trending?geo=US&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb")
+        .then((response) => response.json())
+        .then((datas) => loadVideos(datas))
+        .catch((error) => console.log(error));
 }
 
 loadHome();
