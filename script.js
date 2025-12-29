@@ -75,7 +75,7 @@ function loadVideos(datas) {
 
 function loadHome() {
     showLoading();
-    fetch("https://yt-api.p.rapidapi.com/trending?geo=US&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb")
+    fetch("https://yt-api.p.rapidapi.com/trending?geo=US&rapidapi-key=e61a94e0d1msh356428ebf8de1a6p1f80d6jsnd991e6f7e9e7")
         .then((response) => response.json())
         .then((datas) => loadVideos(datas))
         .catch((error) => console.log(error));
@@ -97,7 +97,7 @@ function autoComplete(auto) {
     for (let i = 0; i < autoOptions.length; i++) {
         let autoOption = autoOptions[i];
         autoOption.addEventListener("click", () => {
-            fetch(`https://yt-api.p.rapidapi.com/search?query=${autoOption.textContent}&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb`)
+            fetch(`https://yt-api.p.rapidapi.com/search?query=${autoOption.textContent}&rapidapi-key=e61a94e0d1msh356428ebf8de1a6p1f80d6jsnd991e6f7e9e7`)
                 .then((response) => response.json())
                 .then((datas) => displaySearch(datas));
         })
@@ -116,7 +116,7 @@ search.addEventListener("input", () => {
             autoComplete(JSON.parse(checkLocal));
         }
         else {
-            fetch(`https://yt-api.p.rapidapi.com/suggest_queries?query=${text}&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb`)
+            fetch(`https://yt-api.p.rapidapi.com/suggest_queries?query=${text}&rapidapi-key=e61a94e0d1msh356428ebf8de1a6p1f80d6jsnd991e6f7e9e7`)
                 .then(response => response.json())
                 .then((auto) => {
                     localStorage.setItem(text, JSON.stringify(auto));
@@ -135,7 +135,7 @@ function displaySearch(datas) {
 search.addEventListener("keypress", (event) => {
     if (event.key == "Enter") {
         let query = search.value;
-        fetch(`https://yt-api.p.rapidapi.com/search?query=${query}&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb`)
+        fetch(`https://yt-api.p.rapidapi.com/search?query=${query}&rapidapi-key=e61a94e0d1msh356428ebf8de1a6p1f80d6jsnd991e6f7e9e7`)
             .then((response) => response.json())
             .then((datas) => displaySearch(datas));
     }
@@ -143,7 +143,7 @@ search.addEventListener("keypress", (event) => {
 
 searchbtn.addEventListener("click", () => {
     let query = search.value;
-    fetch(`https://yt-api.p.rapidapi.com/search?query=${query}&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb`)
+    fetch(`https://yt-api.p.rapidapi.com/search?query=${query}&rapidapi-key=e61a94e0d1msh356428ebf8de1a6p1f80d6jsnd991e6f7e9e7`)
         .then((response) => response.json())
         .then((datas) => displaySearch(datas));
 })

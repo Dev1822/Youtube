@@ -99,12 +99,12 @@ function relatedVids(datas) {
 
 function relatedVidsLoad(){
     showLoading();
-    fetch(`https://yt-api.p.rapidapi.com/related?id=${videoId}&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb`)
+    fetch(`https://yt-api.p.rapidapi.com/related?id=${videoId}&rapidapi-key=e61a94e0d1msh356428ebf8de1a6p1f80d6jsnd991e6f7e9e7`)
     .then((response)=>response.json())
     .then((datas)=>relatedVids(datas))
 }
 
-fetch(`https://yt-api.p.rapidapi.com/video/info?id=${videoId}&rapidapi-key=ba15572616mshe02af4d9e2b14a3p19a442jsn543a7ad8ebeb`)
+fetch(`https://yt-api.p.rapidapi.com/video/info?id=${videoId}&rapidapi-key=e61a94e0d1msh356428ebf8de1a6p1f80d6jsnd991e6f7e9e7`)
     .then((response => response.json()))
     .then((data) => showVideo(data))
 
