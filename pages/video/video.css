@@ -212,7 +212,7 @@ header{
 
 .channel-info h3 {
   margin: 0;
-  font-size: 18px;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -431,6 +431,10 @@ a{
 }
 
 @media (max-width: 480px) {
+
+  h3{
+    font-size: 20px;
+  }
 
   .video{
     height: 250px;

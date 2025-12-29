@@ -45,7 +45,7 @@ function showVideo(data) {
     let desStatstxt = `${data.viewCount} views ${data.publishDate} <span class="destitle">${data.title}</span>`;
     desStats.innerHTML = desStatstxt;
     descriptionDisplay.textContent = data.description;
-    infoTitle.textContent = data.title;
+    infoTitle.textContent = data.channelTitle;
     relatedVidsLoad();
 }
 
