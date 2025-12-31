@@ -78,6 +78,7 @@ html,body{
 }
 
 .search-container {
+    position: relative;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -191,14 +192,14 @@ html,body{
     background-color: #222222;
     color: white;
     width: 452px;
-    position: relative;
-    left: 454px;
+    position: absolute;
+    right:618px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     gap: 8px;
     position: fixed;
-    top: 57px;
+    top: 60px;
 }
 
 .auto{
@@ -248,6 +249,10 @@ a{
 
 @media (max-width: 1024px) {
 
+    .autocomplete{
+        display: none;
+    }
+
     .nav {
         width: 72px;
     }
@@ -266,6 +271,12 @@ a{
 }
 
 @media (max-width: 768px) {
+
+    .autocomplete{
+        display: block;
+        left: 10px;
+        width: 220px;
+    }
 
     .nav {
         display: none;
